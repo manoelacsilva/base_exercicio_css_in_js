@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const FormVagas = styled.form`
+export const FormVaga = styled.form`
   display: grid;
   grid-template-columns: 1fr auto;
   background-color: var(--cor-secundaria);

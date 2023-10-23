@@ -1,6 +1,6 @@
 import { FormEvent, useState } from 'react'
 
-import styles from './FormVagas.module.css'
+import { FormVaga, BtnPesquisar } from './styles'
 
 type Props = {
   aoPesquisar: (termo: string) => void
@@ -15,17 +15,16 @@ const FormVagas = ({ aoPesquisar }: Props) => {
   }
 
   return (
-    <form className={styles.form} onSubmit={aoEnviarForm}>
+    <FormVaga onSubmit={aoEnviarForm}>
       <input
-        className={styles.campo}
         placeholder="Front-end, fullstack, node, design"
         onChange={(e) => setTermo(e.target.value)}
         type="search"
       />
-      <button className={styles.btnPesquisar} type="submit">
+      <BtnPesquisar type="submit">
         Pesquisar
-      </button>
-    </form>
+      </BtnPesquisar>
+    </FormVaga>
   )
 }
 export default FormVagas

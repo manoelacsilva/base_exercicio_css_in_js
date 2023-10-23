@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Vaga = styled.li`
+export const VagaLi = styled.li`
   border: 1px solid var(--cor-principal);
   background-color: var(--cor-secundaria);
   color: var(--cor-principal);
